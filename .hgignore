@@ -1,0 +1,10 @@
+
+
+syntax:glob
+*.swp
+auto-save-list
+elpa
+.git
+
+syntax:regexp
+

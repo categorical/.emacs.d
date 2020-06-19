@@ -26,7 +26,11 @@
 
 (package-ensure 'markdown-mode)
 ;;(setq markdown-command "/opt/pythonmarkdown/bin/markdown_py")
-(setq markdown-command "/opt/redcarpet/bin/redcarpet --parse fenced_code_blocks")
+(setq markdown-command
+    (cond
+        ((eq system-type 'windows-nt)
+            "D:\\programs\\ruby\\bin\\ruby.exe D:\\redev\\redcarpet\\bin\\redcarpet --parse fenced_code_blocks")
+        (t "/opt/redcarpet/bin/redcarpet --parse fenced_code_blocks")))
 (setq markdown-live-preview-delete-export 'delete-on-export)
 (setq markdown-split-window-direction 'right)
 (add-to-list 'markdown-css-paths (expand-file-name "resources/markdown.css" user-emacs-directory))

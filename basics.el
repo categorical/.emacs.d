@@ -6,7 +6,7 @@
 
 
 (setq package-enable-at-startup nil)
-(setq package-archives '(("melpa" . "http://melpa.org/packages/")))
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")))
 (package-initialize)
 (unless package-archive-contents
     (package-refresh-contents))

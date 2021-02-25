@@ -36,5 +36,6 @@
 (add-to-list 'markdown-css-paths (expand-file-name "resources/markdown.css" user-emacs-directory))
 
 
-
+(package-ensure 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 

@@ -10,7 +10,7 @@
 (set-face-foreground 'minibuffer-prompt "tomato")
 
 (setq-default 
-    c-basic-offset 2
+    c-basic-offset 4
     indent-tabs-mode nil)
 
 (setq split-width-threshold 0)

@@ -46,5 +46,6 @@
     (setq shell-file-name "d:/cygwin64/bin/bash"))
 
 
-
+(package-ensure 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 

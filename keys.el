@@ -8,4 +8,7 @@
     (compile "make" t)))
 
 
+(global-set-key (kbd "C-c w") 'whitespace-mode)
+
+
 

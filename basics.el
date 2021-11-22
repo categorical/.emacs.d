@@ -49,3 +49,7 @@
 (package-ensure 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 
+
+(setq disabled-command-function nil)
+
+

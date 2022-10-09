@@ -40,3 +40,11 @@
 (package-ensure 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 
+
+(add-hook 'python-mode-hook (lambda()
+    (setq indent-tabs-mode nil tab-width 4)
+    ;; indent
+    ;;(electric-indent-mode 0)
+    ;;(setq indent-line-function 'insert-tab)
+    ))
+

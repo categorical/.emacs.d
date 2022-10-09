@@ -13,7 +13,7 @@
     c-basic-offset 2
     indent-tabs-mode nil)
 
-(setq split-width-threshold 0)
+;;(setq split-width-threshold 0) ;; 0 is horizontally vsplit
 
 (global-linum-mode t)
 

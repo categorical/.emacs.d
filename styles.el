@@ -15,7 +15,10 @@
 
 ;;(setq split-width-threshold 0) ;; 0 is horizontally vsplit
 
-(global-linum-mode t)
+;(global-linum-mode t)
+(if (version<= "29.1" emacs-version)
+    (global-display-line-numbers-mode)
+    (global-linum-mode t))
 
 (setq compilation-scroll-output t)
 
